@@ -86,7 +86,7 @@
             },
             tooltip: {
               trigger: 'axis',
-              showContent: false
+              showContent: true
             },
             dataset: {
               source: [
@@ -158,7 +158,10 @@
             itemHeight: 15,
             data: ['未绑定', '已绑定', '已交接']
           },
-          tooltip: {},
+          tooltip: {
+            trigger: 'axis',
+            showContent: true
+          },
           dataset: {
             // 这里指定了维度名的顺序，从而可以利用默认的维度到坐标轴的映射。
             // 如果不指定 dimensions，也可以通过指定 series.encode 完成映射，参见后文。
